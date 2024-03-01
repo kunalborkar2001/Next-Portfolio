@@ -5,7 +5,7 @@ import { cn } from "@/utils/cn";
 
 export default function Navbar() {
     return (
-        <div className="relative w-full flex items-center justify-center">
+        <div className="relative w-full flex items-center justify-center ">
             <NavbarContent className="top-2" />
         </div>
     );
@@ -20,13 +20,13 @@ function NavbarContent({ className }) {
             <Menu setActive={setActive}>
                 <MenuItem setActive={setActive} active={active} item="Services">
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                        <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-                        <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-                        <HoveredLink href="/branding">Branding</HoveredLink>
+                        <HoveredLink href="/">Front End Design</HoveredLink>
+                        <HoveredLink href="/">Bancend Design</HoveredLink>
+                        <HoveredLink href="/">Home Page Designs</HoveredLink>
+                        <HoveredLink href="/">Full stack website</HoveredLink>
                     </div>
                 </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Products">
+                <MenuItem setActive={setActive} active={active} item="Projects">
                     <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
                             title="Algochurn"

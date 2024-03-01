@@ -1,9 +1,30 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     darkMode: 'dark',
-    images : {
-        domains : ["assets.aceternity.com"]
-    }
+    // images : {
+    //     domains : ["","aceternity.com"]
+    // },
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'assets.aceternity.com',
+            port: '',
+          },
+          {
+            protocol: 'https',
+            hostname: 'aceternity.com',
+            port: '',
+          },
+          {
+            protocol: 'https',
+            hostname: 'media.istockphoto.com',
+            port: '',
+          },
+        ],
+      },
 };
 
 export default nextConfig;
+
+
