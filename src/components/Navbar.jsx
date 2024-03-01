@@ -30,7 +30,7 @@ function NavbarContent({ className }) {
                     <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
                             title="Algochurn"
-                            href="https://algochurn.com"
+                            href="#tabs"
                             src="https://assets.aceternity.com/demos/algochurn.webp"
                             description="Prepare for tech interviews like never before."
                         />
