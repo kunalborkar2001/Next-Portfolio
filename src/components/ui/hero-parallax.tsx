@@ -122,14 +122,15 @@ export const Header = () => {
                         1000
                     ]}
                     wrapper="span"
-                    speed={50}
+                    className="font-bold  text-center bg-clip-text text-transparent bg-gradient-to-b from-violet-500 to-blue-900 py-4"
+                    speed={80}
 
                     repeat={Infinity}
                 />
             </h1>
             <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
-            As a highly skilled and passionate full-stack web developer, 
-            I am dedicated to crafting innovative and user-centric web applications.
+                As a highly skilled and passionate full-stack web developer,
+                I am dedicated to crafting innovative and user-centric web applications.
             </p>
         </div>
     );
