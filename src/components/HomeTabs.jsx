@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { Tabs } from "./ui/tabs";
+import Link from "next/link";
+
 
 export default function HomeTabs() {
     const tabs = [
@@ -9,52 +11,33 @@ export default function HomeTabs() {
             title: "Product",
             value: "product",
             content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-                    <p>Product Tab</p>
-                    <DummyContent />
+                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white ">
+                    <Link href='/projects'>
+                        <DummyContent src="/assets/Tabs/project.jpeg" />
+                    </Link>
                 </div>
             ),
         },
         {
-            title: "Services",
-            value: "services",
+            title: "About",
+            value: "about",
             content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-                    <p>Services tab</p>
-                    <DummyContent />
+                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white ">
+                    <DummyContent src="/assets/Tabs/about.jpeg" />
                 </div>
             ),
         },
         {
-            title: "Playground",
-            value: "playground",
+            title: "Contact",
+            value: "contact",
             content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-                    <p>Playground tab</p>
-                    <DummyContent />
+                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white ">
+                    <DummyContent src="/assets/Tabs/contact.jpeg" />
                 </div>
             ),
         },
-        {
-            title: "Content",
-            value: "content",
-            content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-                    <p>Content tab</p>
-                    <DummyContent />
-                </div>
-            ),
-        },
-        {
-            title: "Random",
-            value: "random",
-            content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-                    <p>Random tab</p>
-                    <DummyContent />
-                </div>
-            ),
-        },
+
+
     ];
 
     return (
@@ -64,14 +47,14 @@ export default function HomeTabs() {
     );
 }
 
-const DummyContent = () => {
+const DummyContent = ({ src }) => {
     return (
         <Image
-            src="https://media.istockphoto.com/id/1307189136/photo/gateway-of-india-mumbai-maharashtra-monument-landmark-famous-place-magnificent-view-without.jpg?s=612x612&w=0&k=20&c=gGzzkXY5bAVbRbokzrjvkt7Ve-Z3yzSVN04NaMqyBB8="
+            src={src}
             alt="dummy image"
             width="1000"
             height="1000"
-            className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+            className="object-contain  h-[90%] sm:h-[100%]  absolute  inset-x-0 w-full mx-auto  hover:scale-105 hover:transition-all ease-in duration-400"
         />
     );
 };
