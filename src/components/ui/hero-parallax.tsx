@@ -109,7 +109,7 @@ export const Header = () => {
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 flex flex-col justify-center items-center text-center">
             <h1 className="text-2xl md:text-7xl font-bold text-white ">
                 Welcome <br /> I am &nbsp;
-                {/* <TypeAnimation
+                <TypeAnimation
                     sequence={[
                         // Same substring at the start will only be typed out once, initially
                         'Kunal Borkar',
@@ -125,7 +125,7 @@ export const Header = () => {
                     speed={50}
 
                     repeat={Infinity}
-                /> */}
+                />
             </h1>
             <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
             As a highly skilled and passionate full-stack web developer, 
