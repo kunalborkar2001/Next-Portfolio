@@ -12,8 +12,8 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        <HomeTabs />
         <CardHoverEffectSkills />
+        <HomeTabs />
       </main>
     </>
   );

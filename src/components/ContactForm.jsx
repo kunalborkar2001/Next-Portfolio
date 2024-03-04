@@ -75,6 +75,16 @@ export function ContactForm() {
     return (
         <>
             {!success ? (<div className="h-screen flex flex-col justify-center max-w-lg w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input ">
+                
+                <Link href="/">
+                    <button className="w-fit px-2 py-1 rounded-full relative bg-slate-700 text-white text-sm hover:shadow-2xl hover:shadow-white/[0.1] transition duration-200 border border-slate-600 mb-4">
+                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                        <span className="relative z-20">
+                        &larr;
+                        </span>
+                    </button>
+                </Link>
+
                 <h2 className="font-bold text-xl  text-neutral-200">
                     Contact Form
                 </h2>
