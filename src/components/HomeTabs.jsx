@@ -22,9 +22,11 @@ export default function HomeTabs() {
             title: "About",
             value: "about",
             content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white ">
-                    <DummyContent src="/assets/Tabs/about.jpeg" />
-                </div>
+                <Link href="#about">
+                    <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white ">
+                        <DummyContent src="/assets/Tabs/about.jpeg" />
+                    </div>
+                </Link>
             ),
         },
         {

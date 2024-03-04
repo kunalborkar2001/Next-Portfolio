@@ -23,7 +23,7 @@ function NavbarContent({ className }) {
                 <MenuItem setActive={setActive} active={active} item="Services">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="/">Front End Design</HoveredLink>
-                        <HoveredLink href="/">Bancend Design</HoveredLink>
+                        <HoveredLink href="/">Backend Design</HoveredLink>
                         <HoveredLink href="/">Home Page Designs</HoveredLink>
                         <HoveredLink href="/">Full stack website</HoveredLink>
                     </div>
