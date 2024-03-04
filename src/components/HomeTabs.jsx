@@ -8,8 +8,8 @@ import Link from "next/link";
 export default function HomeTabs() {
     const tabs = [
         {
-            title: "Product",
-            value: "product",
+            title: "Projects",
+            value: "projects",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white ">
                     <Link href='/projects'>
@@ -31,9 +31,11 @@ export default function HomeTabs() {
             title: "Contact",
             value: "contact",
             content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white ">
-                    <DummyContent src="/assets/Tabs/contact.jpeg" />
-                </div>
+                <Link href='/contact' >
+                    <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white ">
+                        <DummyContent src="/assets/Tabs/contact.jpeg" />
+                    </div>
+                </Link>
             ),
         },
 

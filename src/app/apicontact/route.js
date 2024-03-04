@@ -56,6 +56,7 @@ export async function POST(request) {
         return new Response(JSON.stringify({ message: 'Form data stored and emails sent successfully' }), {
             headers: {
                 'Content-Type': 'application/json',
+                status : 201
             },
         });
     } catch (error) {

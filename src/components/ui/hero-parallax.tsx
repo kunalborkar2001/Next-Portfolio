@@ -107,8 +107,8 @@ export const HeroParallax = ({
 export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 flex flex-col justify-center items-center text-center">
-            <h1 className="text-2xl md:text-7xl font-bold text-white ">
-                Welcome <br /> I am &nbsp;
+            <h1 className=" text-[3rem] md:text-7xl font-bold text-white ">
+                Welcome <br /> I am &nbsp; <br />
                 <TypeAnimation
                     sequence={[
                         // Same substring at the start will only be typed out once, initially
@@ -123,8 +123,7 @@ export const Header = () => {
                     ]}
                     wrapper="span"
                     className="font-bold  text-center bg-clip-text text-transparent bg-gradient-to-b from-violet-500 to-blue-900 py-4"
-                    speed={80}
-
+                    speed={50}
                     repeat={Infinity}
                 />
             </h1>

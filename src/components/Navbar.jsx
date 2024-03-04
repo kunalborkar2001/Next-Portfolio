@@ -31,28 +31,28 @@ function NavbarContent({ className }) {
                 <MenuItem setActive={setActive} active={active} item="Projects">
                     <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
-                            title="Algochurn"
-                            href="#tabs"
-                            src="https://assets.aceternity.com/demos/algochurn.webp"
-                            description="Prepare for tech interviews like never before."
+                            title="All"
+                            href="/projects"
+                            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709424000&semt=sph"
+                            description="Have a look at my all time best projects"
                         />
                         <ProductItem
-                            title="Tailwind Master Kit"
-                            href="https://tailwindmasterkit.com"
-                            src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                            description="Production ready Tailwind css components for your next project"
+                            title="QKart"
+                            href="#!"
+                            src="/assets/qkart.png"
+                            description="Complete Ecommerce Website"
                         />
                         <ProductItem
-                            title="Moonbeam"
-                            href="https://gomoonbeam.com"
-                            src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-                            description="Never write from scratch again. Go from idea to blog in minutes."
+                            title="Qtify"
+                            href="#!"
+                            src="/assets/qtify.png"
+                            description="Music website like spotify"
                         />
                         <ProductItem
-                            title="Rogue"
-                            href="https://userogue.com"
-                            src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                            description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+                            title="Qtravel"
+                            href="#!"
+                            src="/assets/qtravel.png"
+                            description="Travel Booking site"
                         />
                     </div>
                 </MenuItem>

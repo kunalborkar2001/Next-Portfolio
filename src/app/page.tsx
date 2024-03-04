@@ -3,6 +3,7 @@
 import Navbar from '../components/Navbar'
 import HeroSection from "../components/HeroSection"
 import HomeTabs from "../components/HomeTabs"
+import CardHoverEffectSkills from "../components/CardHoverEffectSkills"
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <HomeTabs />
+        <CardHoverEffectSkills />
       </main>
     </>
   );

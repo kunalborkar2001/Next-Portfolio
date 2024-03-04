@@ -28,7 +28,6 @@ const Projects = () => {
                     ))
                 }
 
-
                 {/* Spider Man Image  */}
                 <div className='' >
                     <Image src="https://images.hdqwalls.com/download/gas-giant-planet-4k-km-2880x1580.jpg"

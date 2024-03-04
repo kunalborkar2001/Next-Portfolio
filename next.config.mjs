@@ -31,6 +31,11 @@ const nextConfig = {
             hostname: 'images.hdqwalls.com',
             port: '',
           },
+          {
+            protocol: 'https',
+            hostname: 'img.freepik.com',
+            port: '',
+          },
         ],
       },
 };
