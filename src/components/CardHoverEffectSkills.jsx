@@ -38,7 +38,7 @@ export const projects = [
 
     },
     {
-        title: "Achievment",
+        title: "Achievement",
         description:
             ["Scored 94% in GeekTrust Challenge", "200+ DSA Solved"],
 
