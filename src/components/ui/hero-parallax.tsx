@@ -20,7 +20,7 @@ export const HeroParallax = ({
     products: {
         name: string;
         link: string;
-        imgUrl: string;
+        imgLink: string;
     }[];
 }) => {
     const firstRow = products.slice(0, 5);
@@ -173,7 +173,7 @@ export const ProductCard = ({
     product: {
         name: string;
         link: string;
-        imgUrl: string;
+        imgLink: string;
     };
     translate: MotionValue<number>;
 }) => {
@@ -193,7 +193,7 @@ export const ProductCard = ({
                 className="block group-hover/product:shadow-2xl "
             >
                 <Image
-                    src={product.imgUrl}
+                    src={product.imgLink}
                     height="600"
                     width="600"
                     className="object-contain object-left-top absolute h-full w-full inset-0"
