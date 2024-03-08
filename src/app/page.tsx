@@ -3,6 +3,7 @@
 import Navbar from '../components/Navbar'
 import HeroSection from "../components/HeroSection"
 import CardHoverEffectSkills from "../components/AboutMe"
+import Footer from "../components/Footer"
 
 export default function Home() {
 
@@ -12,7 +13,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <CardHoverEffectSkills />
-
+      <Footer />
       </main>
 
       {/* <div className='absolute top-3 left-3'>
