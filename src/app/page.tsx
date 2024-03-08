@@ -3,7 +3,7 @@
 import Navbar from '../components/Navbar'
 import HeroSection from "../components/HeroSection"
 import HomeTabs from "../components/HomeTabs"
-import CardHoverEffectSkills from "../components/CardHoverEffectSkills"
+import CardHoverEffectSkills from "../components/AboutMe"
 
 export default function Home() {
 

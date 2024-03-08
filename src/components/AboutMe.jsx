@@ -1,6 +1,6 @@
 import { HoverEffect } from "./ui/card-hover-effect";
 
-export default function CardHoverEffectSkills() {
+export default function AboutMe() {
     return (
         <div className="max-w-5xl mx-auto px-8 mt-11" id="about">
             <div className="w-full font-black text-center">
@@ -38,15 +38,15 @@ export const projects = [
 
     },
     {
-        title: "Achievement",
+        title: "Achievements",
         description:
             ["Scored 94% in GeekTrust Challenge", "200+ DSA Solved"],
 
     },
     {
-        title: "Microsoft",
+        title: "Companies",
         description:
-            ["A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services."],
+            ["Cracked Tech-Mahindra during college", "Received a call from CodeHall for the final HR round.","Letzstepin Round in process"],
 
     },
 ];
