@@ -39,19 +39,19 @@ function NavbarContent({ className }) {
                         <ProductItem
                             title="QKart"
                             href="#!"
-                            src="/assets/qkart.png"
+                            src="/assets/ProjectImages/qkart.png"
                             description="Complete Ecommerce Website"
                         />
                         <ProductItem
                             title="Qtify"
                             href="#!"
-                            src="/assets/qtify.png"
+                            src="/assets/ProjectImages/qtify.png"
                             description="Music website like spotify"
                         />
                         <ProductItem
                             title="Qtravel"
                             href="#!"
-                            src="/assets/qtravel.png"
+                            src="/assets/ProjectImages/qtravel.png"
                             description="Travel Booking site"
                         />
                     </div>
