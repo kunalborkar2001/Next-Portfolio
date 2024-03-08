@@ -30,7 +30,7 @@ export let projectData = [
         liveLink : "https://kunalborkar2001-letz-step-in-assessment.vercel.app/"
     },
     {
-        name : "Letzstepin(Company)",
+        name : "Letzstepin(Company) Listing",
         description : "Listing Page 1",
         imgLink : "/assets/ProjectImages/letzstepinlisting1.png",
         gitLink : "https://github.com/kunalborkar2001/letzstepinlistinpage",

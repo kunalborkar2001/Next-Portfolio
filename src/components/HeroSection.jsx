@@ -7,96 +7,65 @@ export default function HeroSection() {
 }
 export const products = [
     {
-        title: "Moonbeam",
-        link: "https://gomoonbeam.com",
+        name: "Qkart",
+        link: "https://qonlineshopping.netlify.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+            "/assets/ProjectImages/qkart.png",
     },
     {
-        title: "Cursor",
-        link: "https://cursor.so",
+        name: "Qtify",
+        link: "https://listenyourlove.netlify.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+            "/assets/ProjectImages/qtify.png",
     },
     {
-        title: "Rogue",
-        link: "https://userogue.com",
+        name: "Qtravel",
+        link: "https://qtrip-travel-dynamic-frontend.netlify.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-    },
-
-    {
-        title: "Editorially",
-        link: "https://editorially.org",
-        thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-    },
-    {
-        title: "Editrix AI",
-        link: "https://editrix.ai",
-        thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-    },
-    {
-        title: "Pixel Perfect",
-        link: "https://app.pixelperfect.quest",
-        thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+            "/assets/ProjectImages/qtravel.png",
     },
 
     {
-        title: "Algochurn",
-        link: "https://algochurn.com",
+        name: "Letzstepin(Company)",
+        link: "https://kunalborkar2001-letz-step-in-assessment.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+            "/assets/ProjectImages/letzstepinhomepage.png",
     },
     {
-        title: "Aceternity UI",
-        link: "https://ui.aceternity.com",
+        name: "Letzstepin(Company) Listing",
+        link: "https://tranquil-sunshine-bb8d96.netlify.app",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+            "/assets/ProjectImages/letzstepinlisting1.png",
     },
     {
-        title: "Tailwind Master Kit",
-        link: "https://tailwindmasterkit.com",
+        name: "Letzstepin(Company)(Optimized)",
+        link: "https://letzstepin-next-lstw.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-    },
-    {
-        title: "SmartBridge",
-        link: "https://smartbridgetech.com",
-        thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-    },
-    {
-        title: "Renderwork Studio",
-        link: "https://renderwork.studio",
-        thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+            "/assets/ProjectImages/letzstepinlisting2.png",
     },
 
     {
-        title: "Creme Digital",
-        link: "https://cremedigital.com",
+        name: "Casa De Silver",
+        link: "https://casadesilver.netlify.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+            "/assets/ProjectImages/casadesilver.png",
     },
     {
-        title: "Golden Bells Academy",
-        link: "https://goldenbellsacademy.com",
+        name: "Nike Landing Page",
+        link: "https://fantastic-cajeta-ac419b.netlify.app",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+            "/assets/ProjectImages/nike.png",
     },
     {
-        title: "Invoker Labs",
-        link: "https://invoker.lol",
+        name: "Zevi (Company)",
+        link: "https://zevi-shop-six.vercel.app/",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+            "/assets/ProjectImages/zevi.png",
     },
     {
-        title: "E Free Invoice",
-        link: "https://efreeinvoice.com",
+        name: "Myntra",
+        link: "https://myntrastore.netlify.app",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+            "/assets/ProjectImages/myntraclone.png",
     },
 ];

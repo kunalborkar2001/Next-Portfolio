@@ -18,7 +18,7 @@ export const HeroParallax = ({
     products,
 }: {
     products: {
-        title: string;
+        name: string;
         link: string;
         thumbnail: string;
     }[];
@@ -61,7 +61,7 @@ export const HeroParallax = ({
     return (
         <div
             ref={ref}
-            className="bg-black py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+            className="bg-black py-40 overflow-auto  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
         >
             <Header />
             <motion.div
@@ -78,7 +78,7 @@ export const HeroParallax = ({
                         <ProductCard
                             product={product}
                             translate={translateX}
-                            key={product.title}
+                            key={product.name}
                         />
                     ))}
                 </motion.div>
@@ -87,7 +87,7 @@ export const HeroParallax = ({
                         <ProductCard
                             product={product}
                             translate={translateXReverse}
-                            key={product.title}
+                            key={product.name}
                         />
                     ))}
                 </motion.div>
@@ -96,7 +96,7 @@ export const HeroParallax = ({
                         <ProductCard
                             product={product}
                             translate={translateX}
-                            key={product.title}
+                            key={product.name}
                         />
                     ))}
                 </motion.div>
@@ -171,7 +171,7 @@ export const ProductCard = ({
     translate,
 }: {
     product: {
-        title: string;
+        name: string;
         link: string;
         thumbnail: string;
     };
@@ -185,7 +185,7 @@ export const ProductCard = ({
             whileHover={{
                 y: -20,
             }}
-            key={product.title}
+            key={product.name}
             className="group/product h-96 w-[30rem] relative flex-shrink-0"
         >
             <Link
@@ -197,12 +197,12 @@ export const ProductCard = ({
                     height="600"
                     width="600"
                     className="object-cover object-left-top absolute h-full w-full inset-0"
-                    alt={product.title}
+                    alt={product.name}
                 />
             </Link>
             <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
             <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-                {product.title}
+                {product.name}
             </h2>
         </motion.div>
     );
