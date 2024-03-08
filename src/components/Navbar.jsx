@@ -29,7 +29,7 @@ function NavbarContent({ className }) {
                     </div>
                 </MenuItem>
                 <MenuItem setActive={setActive} active={active} item="Projects">
-                    <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+                    <div className="text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
                             title="All"
                             href="/projects"
@@ -39,19 +39,19 @@ function NavbarContent({ className }) {
                         <ProductItem
                             title="QKart"
                             href="#!"
-                            src="/assets/ProjectImages/qkart.png"
+                            src="https://i.ibb.co/Nn7G057/qkart.png"
                             description="Complete Ecommerce Website"
                         />
                         <ProductItem
                             title="Qtify"
                             href="#!"
-                            src="/assets/ProjectImages/qtify.png"
+                            src="https://i.ibb.co/yYtnQjQ/qtify.png"
                             description="Music website like spotify"
                         />
                         <ProductItem
                             title="Qtravel"
                             href="#!"
-                            src="/assets/ProjectImages/qtravel.png"
+                            src="https://i.ibb.co/MGB11TV/qtravel.png"
                             description="Travel Booking site"
                         />
                     </div>
