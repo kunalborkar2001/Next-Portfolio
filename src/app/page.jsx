@@ -20,7 +20,6 @@ export default function Home() {
     }
   }, [projects]); // Re-run the effect whenever projects changes
 
-  console.log(projectsData); // Log projectsData to the console
 
 
   useEffect(() => {
