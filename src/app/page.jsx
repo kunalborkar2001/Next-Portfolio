@@ -38,7 +38,6 @@ export default function Home() {
 
   return (
     <div className='w-full relative'>
-      <Navbar />
       <main>
         <HeroSection topTen={topTen}/>
         <CardHoverEffectSkills />
