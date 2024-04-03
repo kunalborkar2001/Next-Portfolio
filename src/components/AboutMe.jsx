@@ -44,9 +44,9 @@ export const projects = [
 
     },
     {
-        title: "Companies",
+        title: "Certifications",
         description:
-            ["Cracked Tech-Mahindra during college", "Received a call from CodeHall for the final HR round.","Letzstepin Round in process"],
+            ["Full stack certification from crio.do", "Top 5% Professional Certification from pro5.ai in Full Stack Development"],
 
     },
 ];
