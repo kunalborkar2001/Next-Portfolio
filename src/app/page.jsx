@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import HeroSection from "../components/HeroSection"
 import CardHoverEffectSkills from "../components/AboutMe"
 import Footer from "../components/Footer"
-import { useMyContext } from '@/context/MyContext'
+import { useMyContext } from '@/context/MyContext.js'
 import { useEffect, useState } from 'react'
 
 
