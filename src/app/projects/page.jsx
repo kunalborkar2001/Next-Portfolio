@@ -4,10 +4,19 @@ import React, { useEffect, useState } from 'react'
 import ProjectHero from "../../components/ProjectHero"
 import ProjectCard from "../../components/ProjectCard"
 import Image from 'next/image'
-import { projectData } from "../../../public/Data/projects"
+// import { projectData } from "../../../public/Data/projects"
+import { useMyContext } from '../context/MyContext'
 
 const Projects = () => {
-    const [projects, setProjects] = useState(projectData)
+    
+    const projects = useMyContext(); // Access projects data from context
+    const [projectsData, setProjectsData] = useState(null);
+
+    useEffect(() => {
+
+        setProjectsData(projects.data); // Update projectsData state with projects from context
+
+    }, [projects]); // Re-run the effect whenever projects changes
 
 
     return (
@@ -15,8 +24,8 @@ const Projects = () => {
             <ProjectHero />
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 z-50 relative gap-2'>
 
-                {projects && projects.length > 0 &&
-                    projects.map((project, index) => (
+                {projectsData && projectsData.length > 0 &&
+                    projectsData.map((project, index) => (
                         <ProjectCard
                             key={index}
                             name={project.name}
