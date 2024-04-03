@@ -13,7 +13,7 @@ const ContactSchema = new mongoose.Schema({
 const Contact = mongoose.model('Contact', ContactSchema);
 
 // MongoDB connection URI
-const MONGODB_URI = 'mongodb+srv://kunalborkar2001:pveoINdiVlZx2wEm@kunalsmongo.5raphyd.mongodb.net/myportfolio';
+const MONGODB_URI = process.env.MONGODB_URL;
 
 // Connect to MongoDB
 mongoose.connect(MONGODB_URI);
@@ -23,8 +23,8 @@ const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-        user: 'kunalborkar3088@gmail.com', // Your Gmail email address
-        pass: 'ibhhlfkuhalnyfzi', // Your Gmail password
+        user: process.env.EMAIL, // Your Gmail email address
+        pass: process.env.PASSWORD, // Your Gmail password
     },
 });
 

@@ -46,7 +46,7 @@ export function ContactForm() {
         e.preventDefault();
         setProgress(true)
         try {
-            const response = await fetch('/apicontact', {
+            const response = await fetch('/api/contactme', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
