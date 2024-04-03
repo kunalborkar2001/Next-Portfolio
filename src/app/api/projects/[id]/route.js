@@ -8,8 +8,6 @@ export const GET = async (request, { params }) => {
 
     mongoose.connect(MONGODB_URI)
 
-    console.log(params.id);
-
     const getDetails = await Projects.findOne({ _id: params.id })
 
     return new Response(JSON.stringify(getDetails), {

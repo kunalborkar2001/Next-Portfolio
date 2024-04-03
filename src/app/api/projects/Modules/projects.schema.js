@@ -1,7 +1,7 @@
-const { default: mongoose } = require("mongoose")
+import { Schema, model, models } from "mongoose";
 
 
-const projectSchema = new mongoose.Schema({
+const projectSchema = new Schema({
     name: String,
     description: String,
     imgLink: String,
@@ -9,7 +9,7 @@ const projectSchema = new mongoose.Schema({
     liveLink: String,
 })
 
-const Projects = mongoose.model('Project', projectSchema, "projects")
+const Projects = models.Project || model("Project", projectSchema, "projects");
 
 
 module.exports = Projects
