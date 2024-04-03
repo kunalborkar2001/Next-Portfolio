@@ -19,13 +19,13 @@ export const HeroParallax = ({
 }: {
     products: {
         name: string;
-        link: string;
+        liveLink: string;
         imgLink: string;
     }[];
 }) => {
-    const firstRow = products.slice(0, 5);
-    const secondRow = products.slice(5, 10);
-    const thirdRow = products.slice(10, 15);
+    const firstRow = products?.slice(0, 5);
+    const secondRow = products?.slice(5, 10);
+    const thirdRow = products?.slice(10, 15);
     const ref = React.useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -74,7 +74,7 @@ export const HeroParallax = ({
                 className=""
             >
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-                    {firstRow.map((product) => (
+                    {firstRow?.map((product) => (
                         <ProductCard
                             product={product}
                             translate={translateX}
@@ -83,7 +83,7 @@ export const HeroParallax = ({
                     ))}
                 </motion.div>
                 <motion.div className="flex flex-row  mb-20 space-x-20 ">
-                    {secondRow.map((product) => (
+                    {secondRow?.map((product) => (
                         <ProductCard
                             product={product}
                             translate={translateXReverse}
@@ -92,7 +92,7 @@ export const HeroParallax = ({
                     ))}
                 </motion.div>
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-                    {thirdRow.map((product) => (
+                    {thirdRow?.map((product) => (
                         <ProductCard
                             product={product}
                             translate={translateX}
@@ -172,7 +172,7 @@ export const ProductCard = ({
 }: {
     product: {
         name: string;
-        link: string;
+        liveLink: string;
         imgLink: string;
     };
     translate: MotionValue<number>;
@@ -189,7 +189,8 @@ export const ProductCard = ({
             className="group/product h-96 w-[30rem] relative flex-shrink-0"
         >
             <Link
-                href={product.link}
+                href={product.liveLink}
+                target="_blank"
                 className="block group-hover/product:shadow-2xl "
             >
                 <Image

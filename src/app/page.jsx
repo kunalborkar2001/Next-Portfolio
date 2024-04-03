@@ -4,16 +4,45 @@ import Navbar from '../components/Navbar'
 import HeroSection from "../components/HeroSection"
 import CardHoverEffectSkills from "../components/AboutMe"
 import Footer from "../components/Footer"
+import { useMyContext } from '@/context/MyContext'
+import { useEffect, useState } from 'react'
+
 
 export default function Home() {
+
+  const projects = useMyContext(); // Access projects data from context
+  const [projectsData, setProjectsData] = useState(null);
+  const [topTen, setTopTen] = useState(null)
+
+  useEffect(() => {
+    if (projects !== null) {
+      setProjectsData(projects.data); // Update projectsData state with projects from context
+    }
+  }, [projects]); // Re-run the effect whenever projects changes
+
+  console.log(projectsData); // Log projectsData to the console
+
+
+  useEffect(() => {
+    if (projectsData !== null) {
+      const slicedProjects = projectsData.slice(0, 10);
+      setTopTen(slicedProjects); // Update topThree state with sliced projects
+    }
+  }, [projectsData]); 
+
+
+
+
+
+
 
   return (
     <div className='w-full relative'>
       <Navbar />
       <main>
-        <HeroSection />
+        <HeroSection topTen={topTen}/>
         <CardHoverEffectSkills />
-      <Footer />
+        <Footer />
       </main>
 
       {/* <div className='absolute top-3 left-3'>

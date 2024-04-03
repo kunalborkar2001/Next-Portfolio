@@ -12,7 +12,7 @@ export default function Navbar() {
     );
 }
 
-function NavbarContent({ className }) {
+function NavbarContent({ className, threeProjects }) {
     const [active, setActive] = useState(null);
     return (
         <div
@@ -31,25 +31,26 @@ function NavbarContent({ className }) {
                 <MenuItem setActive={setActive} active={active} item="Projects">
                     <div className="text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
-                            title="All"
+                            name="All"
                             href="/projects"
                             src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709424000&semt=sph"
                             description="Have a look at my all time best projects"
                         />
+
                         <ProductItem
-                            title="QKart"
+                            name="QKart"
                             href="#!"
                             src="https://i.ibb.co/Nn7G057/qkart.png"
                             description="Complete Ecommerce Website"
                         />
                         <ProductItem
-                            title="Qtify"
+                            name="Qtify"
                             href="#!"
                             src="https://i.ibb.co/yYtnQjQ/qtify.png"
                             description="Music website like spotify"
                         />
                         <ProductItem
-                            title="Qtravel"
+                            name="Qtravel"
                             href="#!"
                             src="https://i.ibb.co/MGB11TV/qtravel.png"
                             description="Travel Booking site"

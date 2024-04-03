@@ -78,12 +78,12 @@ export const Menu = ({
 };
 
 export const ProductItem = ({
-    title,
+    name,
     description,
     href,
     src,
 }: {
-    title: string;
+    name: string;
     description: string;
     href: string;
     src: string;
@@ -94,12 +94,12 @@ export const ProductItem = ({
                 src={src}
                 width={140}
                 height={70}
-                alt={title}
+                alt={name}
                 className="flex-shrink-0 rounded-md shadow-2xl"
             />
             <div>
                 <h4 className="text-xl font-bold mb-1 text-white">
-                    {title}
+                    {name}
                 </h4>
                 <p className=" text-sm max-w-[10rem] text-neutral-300">
                     {description}
