@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
@@ -9,7 +10,7 @@ import { DirectionAwareHover } from "./ui/direction-aware-hover";
 export default function ProjectTracing() {
     return (
         <TracingBeam className="px-6">
-            <h1>This page is still in production for more project details please visit <a target="_blank" className="text-[blue]" href="https://www.crio.do/learn/portfolio/kunalborkar2001/">Prev Portfolio</a></h1>
+            <h1 className="pt-[100px]">This page is still in production. For more project details please visit <a target="_blank" className="text-[blue]" href="https://www.crio.do/learn/portfolio/kunalborkar2001/">Prev Portfolio</a></h1>
             <div className="max-w-2xl mx-auto antialiased pt-4 relative">
                 {dummyContent.map((item, index) => (
                     <div key={`content-${index}`} className="mb-10">

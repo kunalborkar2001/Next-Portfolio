@@ -39,7 +39,7 @@ function NavbarContent({ className, threeProjects }) {
 
                         <ProductItem
                             name="QKart"
-                            href="#!"
+                            href="https://qonlineshopping.netlify.app/"
                             src="https://i.ibb.co/Nn7G057/qkart.png"
                             description="Complete Ecommerce Website"
                         />

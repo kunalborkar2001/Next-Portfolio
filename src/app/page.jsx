@@ -15,6 +15,13 @@ export default function Home() {
   const [topTen, setTopTen] = useState(null)
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const meCheck = localStorage.getItem("itsMe");
+      // Your code that uses meCheck here
+    }
+  }, []);
+
+  useEffect(() => {
     if (projects !== null) {
       setProjectsData(projects.data); // Update projectsData state with projects from context
     }
@@ -27,7 +34,7 @@ export default function Home() {
       const slicedProjects = projectsData.slice(0, 10);
       setTopTen(slicedProjects); // Update topThree state with sliced projects
     }
-  }, [projectsData]); 
+  }, [projectsData]);
 
 
 
@@ -38,7 +45,7 @@ export default function Home() {
   return (
     <div className='w-full relative'>
       <main>
-        <HeroSection topTen={topTen}/>
+        <HeroSection topTen={topTen} />
         <CardHoverEffectSkills />
         <Footer />
       </main>
