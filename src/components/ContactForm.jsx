@@ -155,7 +155,7 @@ export function ContactForm() {
                             </button>
                         </Link>
 
-                        <Link href="https://www.linkedin.com/in/kunal-borkar-195a3a213/" target="_blank">
+                        <Link href="https://www.linkedin.com/in/kunalborkar26/" target="_blank">
                             <button
                                 className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium  bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                                 type="button"
