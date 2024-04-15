@@ -19,7 +19,7 @@ function NavbarContent({ className, threeProjects }) {
             className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
         >
             <Menu setActive={setActive}>
-                <Link href='/'><MenuItem setActive={setActive} active={active} item="Home"  /></Link>
+                <Link href='/'><MenuItem setActive={setActive} active={active} item="Home" /></Link>
                 <MenuItem setActive={setActive} active={active} item="Services">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="/">Front End Design</HoveredLink>
@@ -36,24 +36,23 @@ function NavbarContent({ className, threeProjects }) {
                             src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709424000&semt=sph"
                             description="Have a look at my all time best projects"
                         />
-
+                        <ProductItem
+                            name="Yoom"
+                            href="https://zoom-clone-ruddy.vercel.app/"
+                            src="https://i.ibb.co/XZQSm3h/Screenshot-2024-04-15-at-09-50-28.png"
+                            description="Zoom Like Web Application"
+                        />
+                        <ProductItem
+                            name="Share-Prompts"
+                            href="https://share-prompts-flax.vercel.app/"
+                            src="https://i.ibb.co/n3PV5Pz/Screenshot-2024-03-27-at-12-15-52.png"
+                            description="Share Collaborative Prompts"
+                        />
                         <ProductItem
                             name="QKart"
                             href="https://qonlineshopping.netlify.app/"
                             src="https://i.ibb.co/Nn7G057/qkart.png"
                             description="Complete Ecommerce Website"
-                        />
-                        <ProductItem
-                            name="Qtify"
-                            href="#!"
-                            src="https://i.ibb.co/yYtnQjQ/qtify.png"
-                            description="Music website like spotify"
-                        />
-                        <ProductItem
-                            name="Qtravel"
-                            href="#!"
-                            src="https://i.ibb.co/MGB11TV/qtravel.png"
-                            description="Travel Booking site"
                         />
                     </div>
                 </MenuItem>
