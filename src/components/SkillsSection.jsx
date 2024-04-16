@@ -81,8 +81,8 @@ const Card = ({
                 </div>
                 <div className="flex flex-col text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10  mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center">
                     
-                    {innerName.map((elem) => (
-                        <p>{elem}</p>
+                    {innerName.map((elem, idx) => (
+                        <p key={idx}>{elem}</p>
                     ))}
                     
                 </div>
@@ -91,27 +91,7 @@ const Card = ({
     );
 };
 
-const AceternityIcon = () => {
-    return (
-        <svg
-            width="66"
-            height="65"
-            viewBox="0 0 66 65"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-10 w-10 text-black dark:text-white group-hover/canvas-card:text-white "
-        >
-            <path
-                d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-                stroke="currentColor"
-                strokeWidth="15"
-                strokeMiterlimit="3.86874"
-                strokeLinecap="round"
-                style={{ mixBlendMode: "darken" }}
-            />
-        </svg>
-    );
-};
+
 
 export const Icon = ({ className, ...rest }) => {
     return (
