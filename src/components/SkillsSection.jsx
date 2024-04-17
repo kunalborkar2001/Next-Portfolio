@@ -6,7 +6,7 @@ import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 
 
 const frontEnd = ["React.js", "Next.js", "HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "Material-UI"]
-const backEnd = ["Express.js", "Node.js", "Mongoose", "NextJs"]
+const backEnd = ["Express.js", "Node.js", "Mongoose", "NextJs", "sequelize"]
 const variegated = ["Docker", "MongoDB", "PostgreSQL", "GIT", "REST", "Linux", "Postman"]
 
 export default function SkillsSection() {
