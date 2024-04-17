@@ -12,6 +12,11 @@ const variegated = ["Docker", "MongoDB", "PostgreSQL", "GIT", "REST", "Linux", "
 export default function SkillsSection() {
     return (
         <>
+            <div className="w-full font-black text-center">
+                <h1 className="text-[4rem]">
+                    Skills
+                </h1>
+            </div>
             <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-4 mx-auto px-8">
                 <Card innerName={frontEnd} outerName={"Frontend"}>
                     <CanvasRevealEffect
